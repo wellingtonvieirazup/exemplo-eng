@@ -33,6 +33,9 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
 
+    //Configuração para monitoramento | Health Check
+    implementation("io.micronaut:micronaut-management")
+
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 }

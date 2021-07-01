@@ -1,3 +1,22 @@
 micronaut:
   application:
     name: exemploEng
+  server:
+      port: 8080
+      cors:
+        enable: true
+  endpoints:
+    health:
+      enable: true
+cassandra:
+  default:
+    basic:
+      contact-points:
+        - localhost:9042
+      session-keyspace: exemplo
+      load-balancing-policy:
+        local-datacenter: datacenter1
+nats:
+  addresses: ${nats_address:localhost}
+  username: ${nats_username:guest}
+  password: ${nats_password:guest}
