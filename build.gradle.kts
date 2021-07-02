@@ -33,6 +33,15 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
 
+    //Nats
+    implementation("io.micronaut.nats:micronaut-nats")
+
+
+    //Configuração banco de dados
+    implementation ("com.datastax.oss:java-driver-core:4.11.0")
+    implementation("io.micronaut.cassandra:micronaut-cassandra")
+
+
     //Configuração para monitoramento | Health Check
     implementation("io.micronaut:micronaut-management")
 
